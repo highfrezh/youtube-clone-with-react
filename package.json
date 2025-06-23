@@ -1,5 +1,9 @@
 {
   "name": "youtube-clone-with-react",
+  "homepage": "https://highfrezh.github.io/youtube-clone-with-react",
+  "description": "A simple YouTube clone built with React, showcasing video listings and details.",
+  "author": "Highfrezh",
+  "license": "MIT",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +11,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "moment": "^2.30.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
